@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
+
+.header {
+  flex: 0 0 auto;
+}
+
+.header__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    height: 120px;
+    background-color: #590BFF;
+    padding: 20px 0 20px 50px;
+    font-size: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Concert+One&family=Kanit:wght@300&family=Oswald:wght@300&family=Patrick+Hand+SC&family=Satisfy&display=swap');
+
+.flip_letters {
+  position: relative;
+}
+
+.flip_letters span {
+  font-size: 5rem;
+  position: relative;
+  display: inline-block;
+  color: rgb(241, 234, 234);
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--flip));
+}
+
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg); 
+  }
+}
+
+.header__title {
+  font-family: Roboto, sans-serif;
+  font-weight: 400px;
+  font-size: 32px;
+  color: #fff;
+} 
+
+.main {
+  flex: 1 0 auto;
+}
+
+.aside {
+  position: fixed;
+  top: 170px;
+  left: 0;
+  font-size: 40px;
+}
+
+.aside__wrapper {
+  background-color: #fff;
+}
+
+.aside__content {
+  font-family: Roboto, sans-serif;
+  border-right: 2px solid #C4C4C4;
+  padding: 15px 20px 300px 20px;
+}
+
+.aside__title {
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 23px;
+}
+
+.aside__list-item {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 12px;
+}
+
+.aside__list-link {
+  color: #FF710B;
+}
+
+.directory {
+    position: relative;
+    top: 200px;
+    left: 340px;
+    width: 75%;
+    padding-bottom: 280px;
+    z-index: -1;
+}
+
+.directory__wrapper {
+  background-color: #fff;
+}
+
+.directory__element {
+  background-color: #fff;
+}
+
+.directory__element-subtitle {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background-color: rgb(75, 24, 218);
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 6px 6px 6px 10px;
+}
+
+.directory__element-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 8px;
+}
+
+.directory__element-item {
+  margin-bottom: 15px;
+}
+
+.footer {
+  flex: 0 0 auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.footer__wrapper {
+  background-color: #000;
+  width: 100%;
+}
+
+.footer__text {
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}

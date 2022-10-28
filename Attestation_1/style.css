@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+  
+  *,
+   *::before,
+   *::after {
+    box-sizing: border-box;
+   }
+  
+  :root {
+    --c-main-dark:rgba(26, 34, 107, 1);
+    --c-main-grey:rgba(120, 120, 120, 1);
+    --c-main-white:rgba(255, 255, 255, 1);
+    --c-gray:rgba(204, 204, 204, 1);
+    --box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    --base-font-family: 'Roboto' , 'Inter' , 'sans-serif';
+    --base-font-weight: 700;
+    --base-line-height: 129%;
+    --input-height: 50px;
+  }
+  
+  button,
+  input {
+    font: inherit;
+    font-size: 100%;
+    color: inherit;
+  }
+  
+  body {
+    display: grid;
+    gap: 12.5rem;
+    justify-items: center;
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
+    line-height: var(--base-line-height);
+    color: var(--c-main-white);
+  }
+  
+  h1 {
+    font-size: 50px;
+    line-height: 1;
+  }
+  
+  header {
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Attestation_1/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../Attestation_1/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../Attestation_1/fonts/Inter-Bold.woff2') format('woff2'),
+        url('../Attestation_1/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    display: flex;
+    background-color: var(--c-main-white);
+    box-shadow: var(--box-shadow);
+    font-family: 'Inter';
+    font-weight: var(--base-font-weight);
+    min-width: 820px;
+    height: 80px;
+}
+
+.header__logo {
+   min-width: 222px;
+   height: 50px;
+   margin: 18px 0px 12px 30px;
+   background: url(image.png);
+   background-size: 100% 100%;
+}
+
+.header__text {
+  width: 242px;
+  height: 44px;
+  margin: 21px 0px 15px 30px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--c-main-grey);
+}
+
+.header__registration {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  width: 157px;
+  height: 29px;
+  margin: 25px 28px 26px auto;
+  font-family: "Inter", 'sans-serif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--c-main-grey);
+}
+
+.header__login-click{
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
+  height: 29px;
+  margin: 25px 43px 26px 0;
+}
+
+.header__registration:hover {
+  color: var(--c-main-dark);
+  transition: 0.2s;
+}
+
+.form__box,
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--c-main-white);
+  color: var(--c-main-grey);
+  padding: 26px 45px;
+  box-shadow: var(--box-shadow);
+}
+
+.form__box:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.form__item :not(:last-child) {
+  margin-bottom: 15px;
+}
+ 
+.form__body:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input__label {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.input__label:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.input__control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--input-height);
+  font-weight: 700;
+  border: 2px solid var(--c-main-grey);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.input__control:hover {
+  border-color: var(--c-main);
+}
+
+.input__control::placeholder {
+  color: var(--c-gray);
+  min-height: 19px;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 180px;
+  height: var(--input-height);
+  color: var(--c-main-white);
+  background-color: var(--c-main-dark);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 767px) {
+  .form {
+    min-height: 363px;
+  }
+}
+
+@media (max-width: 767px){
+  :root {
+    --input-height: 48px;
+    --base-font-size: 28px;
+        }
+  }

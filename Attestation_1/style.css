@@ -71,7 +71,7 @@
     box-shadow: var(--box-shadow);
     font-family: 'Inter';
     font-weight: var(--base-font-weight);
-    min-width: 75vh;
+    min-width: 90vh;
     min-height: 80px;
 }
 
@@ -296,4 +296,13 @@ textarea.input__control {
     --input-height: 48px;
     --base-font-size: 28px;
         }
+  }
+
+  @media screen and (max-width: 769px){
+   .header__text {
+    width: 162px;
+    height: 29px;
+    margin: 23px 0px 28px 34px;
+    font-size: 24px;
+   }
   }

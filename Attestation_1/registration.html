@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="registration.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Attestation_1</title>
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="image.png" alt="image">
-            <h1 class="header__text">PCS Frontend</h1>
+        <img class="header__logo" src="../Attestation_1/images/image.png" alt="image">
+            <div class="header__text">PCS Frontend</div>
                 <a class="header__registration" href="registration.html">Регистрация</a>
                 <a class="header__registration header__login-click" href="index.html">Вход</a>      
     </header>
@@ -28,7 +28,9 @@
           placeholder="Введите email"
           />
          </label>
-         <div class="for__item">
+        </div>
+      </div>
+      <div class="form__item">
           <label class="input">
            <span class="input__label">Пароль</span>
            <input 
@@ -38,8 +40,8 @@
            placeholder="Введите пароль"
            />
           </label>
-        </div>
-        <div class="for__item">
+      </div>
+      <div class="form__item">
             <label class="input">
              <span class="input__label">Подтвердите пароль</span>
              <input 
@@ -49,10 +51,11 @@
              placeholder="Подтвердите пароль"
              />
             </label>
-        </div>
+      </div>
+      <div class="form__item">
         <p class="box-form__caption main-form__caption_small">Пол</p>
         <div class="box-form__radiogroup">
-            <div class="box-form__radioitem"  id="margin9">
+            <div class="box-form__radioitem"  id="">
                 <input id="radio1" type="radio" name="gender" value="male" checked>
                 <label class="box-form__label-radio" for="radio1"> Мужчина</label> 
             </div>
@@ -61,29 +64,35 @@
                 <label class="box-form__label-radio" for="radio2"> Женщина</label>
             </div>
         </div>
-        <p class="box-form__caption box-form__caption-small" for="selfabout">О себе</p>
-        <textarea class="box-form__textarea" 
-        id="selfabout" 
-        name="selfabout" 
-        type="password" 
-        placeholder="Расскажите о себе...">
-        </textarea>
-        <div class="for__item">
-            <label class="checkbox">
-              <input 
-              class="checkbox__control visually-hidden"
-              type="checkbox"
-              name="agreement"
-              />
+      </div>
+      <div class="form__item">
+          <label class="input">
+            <span class="input__label">О себе</span>
+            <textarea class="input__control" name="user-message"
+              id="selfabout" 
+              name="selfabout" 
+              type="password" 
+             placeholder="Расскажите о себе...">
+            </textarea>
+          </label>
+        </div>
+        <div class="form__item">
+          <label class="checkbox">
+            <input 
+            class="checkbox__control visually-hidden"
+            type="checkbox"
+            name="agreement"
+            />
               <span class="checkbox__emulator"></span>
               <span class="checkbox__label">Я согласен получать обновления на почту</span>
             </label>
           </div>
-        <footer class="form__footer">
+        <div class="form__item">
           <button class="form__submit-button button" type="submit">
                 Регистрация
           </button>
-       </footer>
+        </div>
+      </div>
       </form>   
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../Attestation_2/style/style.css">
+  <title>Attestation_2</title>
+</head>
+<body>
+    <header class="header">
+        <a 
+      class="header__logo logo"
+      href="https://innopolis.university/" 
+      title="Перейти на главную страницу">
+        <img class="header__logo" 
+        src="../Attestation_2/images/image.png" 
+        alt="Innopolis University | PCS Frontend"
+        title="Перейти на главную страницу"></a>
+            <div class="header__text">PCS Frontend</div>
+                <a class="header__registration" href="registration.html">Регистрация</a>
+                <a class="header__registration header__login-click" href="index.html">Вход</a>      
+    </header>
+    <form class="form" data-js-form>
+      <div class="form__box">
+       <h1 class="form__title">Регистрация</h1>
+      </div>
+      <div class="form__body">
+        <div class="form__item">
+         <label class="input" data-js-input='{"type": "email"}'>
+          <span class="input__label input__label--required">Email</span>
+          <span class="input__error" data-js-input-error></span>
+          <input 
+          class="input__control" 
+          type="text"
+          name="email"
+          placeholder="Введите email"
+          data-js-input-control
+          />
+         </label>
+        </div>
+      <div class="form__item">
+          <label class="input" data-js-input='{
+            "type": "password",
+            "passwordConfirmInputID": "password-confirmation"}'>
+           <span class="input__label input__label--required">Пароль</span>
+           <span class="input__error" data-js-input-error></span>
+           <input 
+           class="input__control" 
+           id="original-password"
+           type="password"
+           name="password"
+           placeholder="Введите пароль"
+           data-js-input-control
+           />
+          </label>
+      </div>
+      <div class="form__item">
+            <label class="input" data-js-input='{
+              "type": "password-confirmation",
+              "originalPasswordInputID": "original-password"}'>
+             <span class="input__label input__label--required">Подтвердите пароль</span>
+             <span class="input__error" data-js-input-error></span>
+             <input 
+             class="input__control" 
+             id="password-confirmation"
+             type="password"
+             name="password-confirmation"
+             placeholder="Подтвердите пароль"
+             data-js-input-control
+             />
+            </label>
+      </div>
+      <div class="form__item">
+        <p class="box-form__caption main-form__caption_small">Пол</p>
+        <div class="box-form__radiogroup">
+            <div class="box-form__radioitem"  id="">
+                <input id="radio1" type="radio" name="gender" value="male" checked>
+                <label class="box-form__label-radio" for="radio1"> Мужчина</label> 
+            </div>
+            <div class="box-form__radioitem">
+                <input id="radio2" type="radio" name="gender" value="female">
+                <label class="box-form__label-radio" for="radio2"> Женщина</label>
+            </div>
+        </div>
+      </div>
+      <div class="form__item">
+          <label class="input">
+            <span class="input__label">О себе</span>
+            <textarea class="input__control" 
+              name="about"  
+             placeholder="Расскажите о себе...">
+            </textarea>
+          </label>
+        </div>
+        <div class="form__item">
+          <label class="checkbox">
+            <input 
+            class="checkbox__control visually-hidden"
+            type="checkbox"
+            name="agreement"
+            />
+              <span class="checkbox__emulator"></span>
+              <span class="checkbox__label">Я согласен получать обновления на почту</span>
+            </label>
+          </div>
+        <div class="form__item">
+          <button class="form__submit-button button" type="submit">
+                Регистрация
+          </button>
+        </div>
+      </div>
+      </form> 
+      <script defer src="../Attestation_2/script/script.js"></script>
+</body>
+</html>
